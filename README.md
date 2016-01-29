@@ -77,8 +77,8 @@ return repository.save(order);
    * UDP - fire and forget
    * TCP with (truncating) buffer
 * Doppler uses UDP by default
-* Doppler max_buffer_length:100
-* Sharded - failure looses 1/shard % of data
+* Doppler max_buffer_length
+* Sharded - failure loses 1/shard % of data
 
 ---
 
@@ -90,7 +90,7 @@ return repository.save(order);
 
 ## [ <span style="white-space: nowrap;"><small>Emit &gt; Transport &gt; Aggregate &gt;</small> Transform <small>&gt; Store</small></span> ](#6)
 
-* Optimised for speed, not resiliancy.
+* Optimised for speed, not resiliency.
 * Errors - dropped
 
 ---
